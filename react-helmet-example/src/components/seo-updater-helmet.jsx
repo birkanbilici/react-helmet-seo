@@ -20,9 +20,8 @@ const SeoUpdater = (props) => {
     },[title,keywords])
 
     useEffect(()=>{
-        console.log('props',props)
         console.log('allTags',allTags)
-    })
+    },[allTags])
 
     const getTitles = () => {
         let titles = []
